@@ -108,6 +108,7 @@ a {
     align-items: center;
     position: relative;
     margin-top: 62px;
+    overflow: hidden;
 }
 
 /* .spin_section::after {
@@ -339,6 +340,61 @@ a {
 }
 
 
+.Loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Loader img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+#loading-bar-spinner.spinner {
+    animation: loading-bar-spinner 0.6s linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 120px;
+    height: 120px;
+    border: solid 4px transparent;
+    border-top-color: #E5A224 !important;
+    border-left-color: #E5A224 !important;
+    border-radius: 50%;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1500px) {
+    .spin_section {
+        grid-gap: 40px;
+        padding: 60px 120px;
+    }
+}
+
 
 @media (max-width: 991px) {
     .spin_section {
@@ -412,7 +468,7 @@ a {
         justify-content: center;
     }
 
-    .spin_content{
+    .spin_content {
         order: 1;
     }
 
@@ -427,7 +483,7 @@ a {
         z-index: -1;
     }
 
-    .main_images{
+    .main_images {
         order: 1;
     }
 }
@@ -435,17 +491,17 @@ a {
 
 @media (max-width: 575px) {
     .spin_section {
-        grid-gap: 80px;
-        padding: 20px 40px;
+        grid-gap: 100px;
+        padding: 20px 30px;
         margin-top: 62px;
     }
 
     .SpintOWin_heading {
-        font-size: 24px;
+        font-size: 34px;
     }
 
     .SpintOWin_heading span {
-        font-size: 24px;
+        font-size: 34px;
     }
 
     .getdaily_text {
@@ -492,5 +548,49 @@ a {
 
     .bottambar_section {
         padding: 8px 10px;
+    }
+
+    .main_images {
+        width: 220px;
+        height: auto;
+        order: -1;
+    }
+
+    .app_counter p {
+        font-size: 26px;
+        width: 104px;
+    }
+
+    .app_counter span {
+        font-size: 12px;
+    }
+
+    .app_counter h1 {
+        font-size: 65px;
+    }
+
+    .Referdownload_button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .ReferEarn_btn {
+        padding: 8px 15px;
+        font-size: 14px;
+
+    }
+
+    .download_btn {
+        padding: 8px 15px;
+        font-size: 14px;
+
+    }
+
+    .marquee {
+        padding: 10px 0;
     }
 }
