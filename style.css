@@ -187,7 +187,7 @@ a {
     background-color: #1abc9c;
 }
 
-.download_btn svg ,
+.download_btn svg,
 .ReferEarn_btn svg {
     width: 20px;
     height: 20px;
@@ -258,6 +258,7 @@ a {
     gap: 40px;
 }
 
+
 .bottambar_text p {
     color: #1abc9c;
     font-size: 16px;
@@ -286,6 +287,11 @@ a {
 .main_images {
     width: 300px;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .main_images img {
@@ -358,7 +364,7 @@ a {
     border-radius: 50%;
 }
 
-.overflow-hidden{
+.overflow-hidden {
     overflow: hidden;
 }
 
@@ -407,7 +413,7 @@ a {
         display: grid;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .SpintOWin_heading {
@@ -459,6 +465,10 @@ a {
     .main_images {
         order: 1;
     }
+
+    .app_counter {
+        justify-content: center;
+    }
 }
 
 
@@ -472,7 +482,7 @@ a {
     .spin_content {
         background-color: #000000;
         padding-left: 0;
-        padding: 30px ;
+        padding: 30px;
     }
 
     .SpintOWin_heading {
@@ -513,13 +523,12 @@ a {
     .icon_leftside {
         gap: 10px;
     }
-
+    
     .bottambar_btn {
-        padding: 6px 10px;
+        padding: 4px 10px;
         gap: 6px;
         font-size: 14px;
     }
-
     .apps_icon {
         width: 30px;
         height: 30px;
@@ -533,6 +542,8 @@ a {
         width: 220px;
         height: auto;
         order: -1;
+        margin-left: 40px;
+
     }
 
     .app_counter p {
